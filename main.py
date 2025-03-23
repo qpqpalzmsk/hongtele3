@@ -8,9 +8,9 @@ from telethon.errors import FloodWaitError, RPCError
 ##################################
 # [1] 텔레그램 기본 설정
 ##################################
-API_ID = int(os.getenv("API_ID", "22302046"))
-API_HASH = os.getenv("API_HASH", "bf53409eb9fbb23b5b66e01aead9e78d")
-PHONE_NUMBER = os.getenv("PHONE_NUMBER", "+998331107364")
+API_ID = int(os.getenv("API_ID", "22848323"))
+API_HASH = os.getenv("API_HASH", "ae0d17ebfcb94357982704b201e40291")
+PHONE_NUMBER = os.getenv("PHONE_NUMBER", "+819034965730")
 
 SESSION_NAME = "my_telethon_session"
 client = TelegramClient(
@@ -33,9 +33,9 @@ MSG_LIMIT = 3  # 최근 메시지 3개 (a, b, c) 로 라운드 로빈
 MAX_GROUPS = 20       # 20개 그룹
 BATCH_SIZE = 5        # 배치당 5개 그룹
 
-DELAY_GROUP = random.randint(120, 180)       # 그룹 간 45초
-DELAY_BATCH = random.randint(600, 1200)      # 배치 간 10분(600초)
-DELAY_CYCLE = random.randint(3600, 5400)     # 사이클 간 102분(6120초)
+DELAY_GROUP = 45       # 그룹 간 45초
+DELAY_BATCH = 600      # 배치 간 10분(600초)
+DELAY_CYCLE = 6120     # 사이클 간 102분(6120초)
 
 ##################################
 # [4] 연결/세션 확인 함수
